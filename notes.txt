@@ -1,0 +1,57 @@
+## Create React App
+npx create-react-app .
+
+## Start React Application
+npm start
+
+## Bundle
+React will transpile all the files into a bundle file.
+
+## When we run the development server it is going to search for the src directory.
+
+## By default we need a src/index.js file
+
+## to create react Application:
+import React from 'react'
+## to connect with index.html:
+import ReactDOM from 'react-dom'
+
+## we need to build components in react Application
+it can be a class or function
+it always needs to return some code
+
+## Functional components:
+Do all types of Javascript stuffs and then return a jsx.
+
+## class components uses methods to return the jsx.
+the jsx is returned inside the render() met
+
+## Use Synthetic events
+onClick={()=>this.eventHandler()}
+
+## state
+this is an object inside a class component that can store multiple values.
+to change a value of a state property we use 
+this.setState({
+    key: newValue
+})
+
+we can pass the state as a parameter to setState:
+this.setState((state,props)=>{
+    count:state.count+1
+})
+
+## props
+We can pass functions and data between components back and forward
+<NewsList news={this.state.news}/>
+ 
+## Lifecycles:
+in class components there are multiple lifecycle methods that can be used to override the process at particular times.
+
+## nextState:
+it is the next form of the state
+
+## prevState:
+The previous form of the state
+
+## hooks
