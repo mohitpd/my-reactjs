@@ -54,4 +54,8 @@ it is the next form of the state
 ## prevState:
 The previous form of the state
 
-## hooks
+## hooks:
+it is used to perform many react features without using classes
+https://reactjs.org/docs/hooks-reference.html
+
+

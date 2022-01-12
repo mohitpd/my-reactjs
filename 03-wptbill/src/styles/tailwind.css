@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@layer utilities {
+    .font-pacifico {
+        font-family: 'Pacifico', cursive;
+    }
+    * {
+        @apply box-border;
+    }
+}
+@layer components {
+    .toast {
+        @apply m-2 rounded-md bg-red-400 py-4 px-8;
+    }
+}
