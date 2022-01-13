@@ -72,4 +72,14 @@ Each route component is created using
 <Route path='/posts' element={<Post />} />
 To create links to the particular route component
 <Link to={'/'}>Home</Link>
+<Link to={'/posts'}>Post</Link>
+
+## To add url parameter to a path use:
+<Route path='/posts/:id' element={<PostItem />} />
+use ':parameter' in the path of the route.
+Inside the component file. Use
+let params = useParams();
+and use params.id or params.parameter to fetch the value of the url parameter dynamically
+Navigate: Use Navigate with parameters to navigate a path to a specific path under specific condition
+
 

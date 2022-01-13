@@ -1,25 +1,29 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
+import './style.css';
+
+import Header from './components/heaader';
 import Home from './components/home';
 import Post from './components/posts';
 import Profile from './components/profile';
+import PostItem from './components/postItem';
 
 const App = () => {
     return (
-        <>
-            <BrowserRouter>
-                <header>
-                    <Link to={'/'}>Home</Link>-<Link to={'/posts'}>Post</Link>-<Link to={'/profile'}>Profile</Link>
-                </header>
-                <hr />
+        <BrowserRouter>
+            <Header />
+            <div className='container'>
                 <Routes>
-                    <Route exact path='/' element={<Home />} />
-                    <Route path='/posts' element={<Post />} />
+                    <Route exact path='posts' element={<Post />}>
+                        <Route path=':id' element={<PostItem />} />
+                    </Route>
                     <Route path='/profile' element={<Profile />} />
+                    <Route path='/' element={<Home />} />
+                    <Route path='*' element={<h3>OOPS Page Not Found</h3>}></Route>
                 </Routes>
-            </BrowserRouter>
-        </>
+            </div>
+        </BrowserRouter>
     );
 };
 
