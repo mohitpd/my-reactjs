@@ -62,3 +62,14 @@ https://reactjs.org/docs/hooks-reference.html
 # React Routes
 ## Installation
 npm install react-router-dom
+
+## create routes in a react app
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+
+<BrowserRouter> is used to cover the main component in our case it is app.js
+enclose the route components with <Routes>
+Each route component is created using 
+<Route path='/posts' element={<Post />} />
+To create links to the particular route component
+<Link to={'/'}>Home</Link>
+
