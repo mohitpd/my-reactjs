@@ -14,6 +14,15 @@ const Header = () => {
                     <Link className='p-2 text-gray-900 no-underline' to='/purecomp'>
                         PureComp
                     </Link>
+                    <Link className='p-2 text-gray-900 no-underline' to='/adjel'>
+                        Adjel
+                    </Link>
+                    <Link className='p-2 text-gray-900 no-underline' to='/user'>
+                        User
+                    </Link>
+                    <Link className='p-2 text-gray-900 no-underline' to='/profile'>
+                        Profile
+                    </Link>
                 </nav>
             </div>
         </header>
