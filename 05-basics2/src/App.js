@@ -8,6 +8,10 @@ import Adjel from './components/adjel';
 import Profile from './components/profile';
 import User from './components/user';
 
+import TransitionComp from './components/transition';
+import CssTr from './components/CSSTransition';
+import Tgroup from './components/tGroup';
+
 function App() {
     return (
         <BrowserRouter>
@@ -18,6 +22,9 @@ function App() {
                 <Route path='/purecomp' element={<PureComp />}></Route>
                 <Route path='/purecompf' element={<PureCompF />}></Route>
                 <Route path='/adjel' element={<Adjel />}></Route>
+                <Route path='/transition' element={<TransitionComp />}></Route>
+                <Route path='/csstransition' element={<CssTr />}></Route>
+                <Route path='/tgroup' element={<Tgroup />}></Route>
                 <Route path='/' element={<Home />}></Route>
             </Routes>
         </BrowserRouter>

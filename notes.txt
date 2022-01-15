@@ -83,3 +83,17 @@ and use params.id or params.parameter to fetch the value of the url parameter dy
 Navigate: Use Navigate with parameters to navigate a path to a specific path under specific condition
 
 
+## PureComponent
+when a class is built using PureComponent is helps when there is no change in the state. it checks and does not re reender the "render()" method. This can also be done using Functional components.
+
+## React components can return array of jsx.
+
+## HOC Higher Order Components:
+This is a method to include Higher components and include props.children inside the HOC. We can apply conditions on the HOC. Like for Authentication.
+## Transitions:
+it is used to define transitions for an element. it results into a variable called "state". It gets the values of enterring, entered, exiting, exited. which can be used to add transition css manually to those elements.
+## CSSTransitions:
+It is same as Transitions in this it itself adds classes to the element. 
+## Transitions Group:
+this is used to work with groups of element. 
+For example an array of elements.

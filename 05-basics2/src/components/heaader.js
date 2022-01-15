@@ -23,6 +23,16 @@ const Header = () => {
                     <Link className='p-2 text-gray-900 no-underline' to='/profile'>
                         Profile
                     </Link>
+                    <Link className='p-2 text-gray-900 no-underline' to='/csstransition'>
+                        CSSTransition
+                    </Link>
+                    <Link className='p-2 text-gray-900 no-underline' to='/tgroup'>
+                        Tgroup
+                    </Link>{' '}
+                    -
+                    <Link className='p-2 text-gray-900 no-underline' to='/transition'>
+                        Transition
+                    </Link>
                 </nav>
             </div>
         </header>
