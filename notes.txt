@@ -4,6 +4,29 @@ npx create-react-app .
 ## Start React Application
 npm start
 
+## Tailwind with React
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+## tailwind.config.js file:
+module.exports = {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    corePlugins: {preflight: false},
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+};
+
+## styles/tailwind.css file:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+## Edit Scripts of package.json:
+"build-css": "tailwindcss -i ./src/styles/tailwind.css -o ./src/style.css --watch",
+
+
 ## Bundle
 React will transpile all the files into a bundle file.
 
@@ -90,10 +113,23 @@ when a class is built using PureComponent is helps when there is no change in th
 
 ## HOC Higher Order Components:
 This is a method to include Higher components and include props.children inside the HOC. We can apply conditions on the HOC. Like for Authentication.
+
+
 ## Transitions:
+Installation:
+npm i react-transition-group
+
 it is used to define transitions for an element. it results into a variable called "state". It gets the values of enterring, entered, exiting, exited. which can be used to add transition css manually to those elements.
 ## CSSTransitions:
 It is same as Transitions in this it itself adds classes to the element. 
 ## Transitions Group:
 this is used to work with groups of element. 
 For example an array of elements.
+
+## Redux:
+Installation:
+npm i redux --save
+npm i react-redux --save
+
+## To make requests:
+npm i axios --save
