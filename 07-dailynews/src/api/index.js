@@ -55,3 +55,18 @@ export const addNewsLetter = async (data) => {
         throw error;
     }
 };
+
+export const sendMessage = async (data) => {
+    try {
+        // Add User
+        const response = await axios({
+            method: 'POST',
+            url: `${URL_SERV}/contact`,
+            data: data,
+        });
+        console.log(response.data);
+        return true;
+    } catch (error) {
+        return false;
+    }
+};
