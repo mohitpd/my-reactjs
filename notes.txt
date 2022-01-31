@@ -137,3 +137,7 @@ npm i axios --save
 
 ## Forms:
 # Formik
+
+## Middleware
+It is a function that is performed between the time the server takes the request and the time the server sends out a request using express
+## To connect a data to express post server request we should use express.json() instead of body-parser
